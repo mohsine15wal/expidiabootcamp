@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="expidiabootcamp" parallel = "tests" thread-count ="5" > 
+  
+  <test  name="Test1">
+ 
+  <parameter name ="browser" value="chrome"></parameter>
+	<parameter name ="site" value="https://www.expedia.com/"></parameter>
+    
+    <classes>
+      <class name="com.expedia.expedia.expidiaNewTest"/>
+    </classes>
+  </test> 
+  <test  name="test2">
+  
+  <parameter name ="browser" value="Firefox"></parameter>
+		<parameter name ="site" value="https://www.expedia.com/"></parameter>
+	
+    <classes>
+      <class name="com.expedia.expedia.expidiaNewTest"/>
+    </classes>
+   </test>
+  <!-- Test -->
+</suite> <!-- Suite -->
